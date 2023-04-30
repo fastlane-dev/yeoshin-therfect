@@ -19,11 +19,11 @@ body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
-.swiper-mobile {
+.swiper {
   width: 100%;
   max-height: 100vh;
 }
 
-.swiper-slide-mobile {
+.swiper {
   max-height: 100vh;
 }

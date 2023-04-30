@@ -17,18 +17,18 @@ export function Web() {
           clickable: true,
         }}
         modules={[Mousewheel]}
-        className="mySwiper swiper-mobile"
+        className="mySwiper"
         speed={800}
       >
-        <SwiperSlide className="swiper-slide-mobile">
+        <SwiperSlide>
           <FirstWebSlide />
         </SwiperSlide>
-        <SwiperSlide className="swiper-slide-mobile">
+        <SwiperSlide>
           <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
             slide 2
           </div>
         </SwiperSlide>
-        <SwiperSlide className="swiper-slide-mobile">
+        <SwiperSlide>
           <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
             slide 3
           </div>

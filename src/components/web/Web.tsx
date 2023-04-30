@@ -1,34 +1,40 @@
-import React, { useEffect, useRef } from "react";
-// import { register } from 'swiper/element/bundle';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-// register();
+import { Mousewheel, Pagination } from "swiper";
 
-// export const MyComponent = () => {
-//     const swiperElRef = useRef(null);
-
-//     useEffect(() => {
-//       // listen for Swiper events using addEventListener
-//       swiperElRef?.current.addEventListener('progress', (e) => {
-//         const [swiper, progress] = e.detail;
-//         console.log(progress);
-//       });
-
-//       swiperElRef?.current.addEventListener('slidechange', (e) => {
-//         console.log('slide changed');
-//       });
-//     }, []);
-
-//     return (
-//       <swiper-container
-//         ref={swiperElRef}
-//         slides-per-view="3"
-//         navigation="true"
-//         pagination="true"
-//       >
-//         <swiper-slide>Slide 1</swiper-slide>
-//         <swiper-slide>Slide 2</swiper-slide>
-//         <swiper-slide>Slide 3</swiper-slide>
-//         ...
-//       </swiper-container>
-//     );
-//   };
+export function Web() {
+  return (
+    <>
+      <Swiper
+        direction={"vertical"}
+        slidesPerView={1}
+        spaceBetween={30}
+        mousewheel={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Mousewheel]}
+        className="mySwiper swiper-mobile"
+        speed={800}
+      >
+        <SwiperSlide className="swiper-slide-mobile">
+          <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
+            slide 1
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide-mobile">
+          <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
+            slide 2
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide-mobile">
+          <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
+            slide 3
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
+}

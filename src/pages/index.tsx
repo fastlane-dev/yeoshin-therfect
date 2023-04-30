@@ -1,14 +1,30 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import React, { useEffect, useState } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Web } from "@/components/web/Web";
+import Mobile from "@/components/mobile/Mobile";
 
-export default function Home() {
-  return (
-    <main
-      className={`flex min-h-screen flex-col items-center text-9xl justify-between p-24 ${inter.className}`}
-    >
-      kkk
-    </main>
-  );
+export default function App() {
+  const [isWeb, setIsWeb] = useState(true);
+
+  useEffect(() => {
+    setIsWeb(window.innerWidth > 1024);
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 1024) {
+        setIsWeb(false);
+      } else {
+        setIsWeb(true);
+      }
+    });
+
+    return () => {
+      window.removeEventListener("resize", () => {
+        if (window.innerWidth < 1024) {
+          setIsWeb(false);
+        } else {
+          setIsWeb(true);
+        }
+      });
+    };
+  }, []);
+  return isWeb ? <Web /> : <Mobile />;
 }

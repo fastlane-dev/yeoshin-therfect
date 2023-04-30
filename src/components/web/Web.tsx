@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Mousewheel, Pagination } from "swiper";
+import { FirstWebSlide } from "./FirstWebSlide";
 
 export function Web() {
   return (
@@ -20,9 +21,7 @@ export function Web() {
         speed={800}
       >
         <SwiperSlide className="swiper-slide-mobile">
-          <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
-            slide 1
-          </div>
+          <FirstWebSlide />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide-mobile">
           <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">

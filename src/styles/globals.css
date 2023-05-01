@@ -23,6 +23,7 @@ body {
   background-color: #f68e0f;
   max-width: 100%;
   overflow-x: hidden;
+  white-space: pre-wrap;
 }
 
 body::-webkit-scrollbar {
@@ -36,4 +37,8 @@ body::-webkit-scrollbar {
 
 .swiper {
   max-height: 100vh;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 4px rgba(211, 76, 0, 0.25);
 }

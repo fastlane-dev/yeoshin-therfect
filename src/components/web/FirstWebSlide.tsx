@@ -12,6 +12,7 @@ export const FirstWebSlide = () => {
       <div className="absolute left-[26vw] top-[78px] -z-10 h-[2vw] w-[2vw]">
         <Image
           src={ball}
+          priority
           fill
           style={{ objectFit: "contain" }}
           alt="therfect_logo"
@@ -20,6 +21,7 @@ export const FirstWebSlide = () => {
       <div className="absolute left-[52vw] top-[66.04px] -z-10 h-[4vw] w-[4vw]">
         <Image
           src={ball}
+          priority
           fill
           style={{ objectFit: "contain" }}
           alt="therfect_logo"
@@ -29,6 +31,7 @@ export const FirstWebSlide = () => {
       <div className="absolute left-[9vw] top-[229px] -z-10 h-[6.3vw] w-[6.3vw]">
         <Image
           src={ball}
+          priority
           fill
           style={{ objectFit: "contain" }}
           alt="therfect_logo"
@@ -37,6 +40,7 @@ export const FirstWebSlide = () => {
       <div className="absolute left-[70vw] top-[250px] -z-10 h-[6.5vw] w-[6.5vw]">
         <Image
           src={ball}
+          priority
           fill
           style={{ objectFit: "contain" }}
           alt="therfect_logo"
@@ -45,6 +49,7 @@ export const FirstWebSlide = () => {
       <div className="absolute bottom-[85px] left-[15vw] -z-10 h-[14.5vw] w-[14.5vw]">
         <Image
           src={ball}
+          priority
           fill
           style={{ objectFit: "contain" }}
           alt="therfect_logo"
@@ -53,6 +58,7 @@ export const FirstWebSlide = () => {
       <div className="absolute bottom-[-13vw] left-[60vw] -z-10 h-[27vw] w-[27vw]">
         <Image
           src={ball}
+          priority
           fill
           style={{ objectFit: "contain" }}
           alt="therfect_logo"

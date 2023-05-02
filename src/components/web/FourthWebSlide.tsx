@@ -7,7 +7,15 @@ export const FourthWebSlide = () => {
       <div className="flex-center items-start gap-[11vw]">
         <div className="flex-center-column">
           <div className="relative  mb-[50px] h-[25vh] w-[15vw]">
-            <Image fill src="/img/first_nozzle.png" alt="first_nozzle" />
+            <Image
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              fill
+              priority
+              src="/img/first_nozzle.png"
+              alt="first_nozzle"
+            />
           </div>
           <div className="mb-[20px] text-[40px] leading-[47.73px]">
             써말아이
@@ -19,7 +27,15 @@ export const FourthWebSlide = () => {
         <div>
           <div className="flex-center-column">
             <div className="relative mb-[50px] h-[25vh] w-[15vw]">
-              <Image fill src="/img/second_nozzle.png" alt="second_nozzle" />
+              <Image
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                fill
+                priority
+                src="/img/second_nozzle.png"
+                alt="second_nozzle"
+              />
             </div>
             <div className="mb-[20px] text-[40px] leading-[47.73px]">
               써말 러빙
@@ -32,7 +48,15 @@ export const FourthWebSlide = () => {
         <div>
           <div className="flex-center-column">
             <div className="relative mb-[50px] h-[25vh] w-[15vw]">
-              <Image fill src="/img/third_nozzle.png" alt="third_nozzle" />
+              <Image
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                fill
+                priority
+                src="/img/third_nozzle.png"
+                alt="third_nozzle"
+              />
             </div>
             <div className="mb-[20px] text-[40px] leading-[47.73px]">
               써말 스탬프
@@ -46,7 +70,15 @@ export const FourthWebSlide = () => {
       <div className="flex-center mt-[9vh] gap-[10vw]">
         <div className="flex-center-column">
           <div className="relative  mb-[50px] h-[15vw] w-[15vw]">
-            <Image fill src="/img/fourth_nozzle.png" alt="first_nozzle" />
+            <Image
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              fill
+              priority
+              src="/img/fourth_nozzle.png"
+              alt="first_nozzle"
+            />
           </div>
           <div className="mb-[20px] text-[40px] leading-[47.73px]">
             프락셔널 64P
@@ -57,7 +89,15 @@ export const FourthWebSlide = () => {
         </div>
         <div className="flex-center-column">
           <div className="relative  mb-[50px] h-[15vw] w-[15vw]">
-            <Image fill src="/img/fifth_nozzle.png" alt="first_nozzle" />
+            <Image
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              fill
+              priority
+              src="/img/fifth_nozzle.png"
+              alt="first_nozzle"
+            />
           </div>
           <div className="mb-[20px] text-[40px] leading-[47.73px]">
             프락셔널 100P

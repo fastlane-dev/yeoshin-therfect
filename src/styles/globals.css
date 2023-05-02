@@ -42,3 +42,23 @@ body::-webkit-scrollbar {
 .text-shadow {
   text-shadow: 4px 4px 4px rgba(211, 76, 0, 0.25);
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table {
+  text-align: left;
+}
+
+table,
+tr {
+  border-top: 1.2px solid black;
+  border-bottom: 1.2px solid black;
+}
+
+td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: baseline;
+}

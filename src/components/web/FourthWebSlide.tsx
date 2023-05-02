@@ -43,7 +43,7 @@ export const FourthWebSlide = () => {
           </div>
         </div>
       </div>
-      <div className="flex-center mt-[15vh] gap-[10vw]">
+      <div className="flex-center mt-[9vh] gap-[10vw]">
         <div className="flex-center-column">
           <div className="relative  mb-[50px] h-[15vw] w-[15vw]">
             <Image fill src="/img/fourth_nozzle.png" alt="first_nozzle" />

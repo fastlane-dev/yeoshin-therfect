@@ -13,6 +13,9 @@ import { SeventhWebSlide } from "./SeventhWebSlide";
 import { EighthWebSlide } from "./EighthWebSlide";
 
 export function Web() {
+  const [triggererdOnceSlideIndex, setTriggererdOnceSlideIndex] = useState(
+    Array.from({ length: 8 }, () => false)
+  );
   return (
     <>
       <Swiper
@@ -25,6 +28,50 @@ export function Web() {
         modules={[Mousewheel]}
         className="mySwiper"
         speed={800}
+        onSlidePrevTransitionStart={(swiper) => {
+          const nthOfCurrentSlide = swiper.activeIndex + 1;
+          // console.log("swiper.activeIndex", swiper.activeIndex);
+
+          console.log("backward");
+          console.log("nthOfCurrentSlide", nthOfCurrentSlide);
+          if (nthOfCurrentSlide === 6) {
+            swiper.changeDirection("horizontal");
+            // swiper.disable();
+            // setTimeout(() => {
+            //   swiper.enable();
+            //   // swiper.slideTo(nthOfCurrentSlide - 1, 800);
+            // }, 850);
+          }
+        }}
+        onSlideNextTransitionStart={(swiper) => {
+          const nthOfCurrentSlide = swiper.activeIndex + 1;
+          console.log("forward");
+          console.log("nthOfCurrentSlide", nthOfCurrentSlide);
+          // console.log("forward");
+          // console.log("nthOfCurrentSlide", nthOfCurrentSlide);
+          // if (nthOfCurrentSlide === 6) {
+
+          //   swiper.disable();
+          //   setTimeout(() => {
+          //     swiper.changeDirection("vertical");
+          //     swiper.enable();
+          //     // swiper.slideTo(nthOfCurrentSlide + 1, 800);
+          //   }, 10);
+          // }
+        }}
+        onSlideChangeTransitionEnd={(swiper) => {
+          // const nthOfCurrentSlide = swiper.activeIndex + 1;
+          // const nthOfPriviouslyVisitedSlide = swiper.previousIndex + 1;
+          // if (nthOfPriviouslyVisitedSlide === 5 && nthOfCurrentSlide === 6) {
+          //   swiper.changeDirection("horizontal");
+          // }
+          // if (nthOfPriviouslyVisitedSlide === 7 && nthOfCurrentSlide === 6) {
+          //   swiper.changeDirection("vertical");
+          // }
+          // if (nthOfCurrentSlide === 8) {
+          //   swiper.changeDirection("vertical");
+          // }
+        }}
       >
         <SwiperSlide>
           <FirstWebSlide />
@@ -43,6 +90,9 @@ export function Web() {
         </SwiperSlide>
         <SwiperSlide>
           <SixthWebSlide />
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>7번째 슬라이드</div>
         </SwiperSlide>
         <SwiperSlide>
           <SeventhWebSlide />

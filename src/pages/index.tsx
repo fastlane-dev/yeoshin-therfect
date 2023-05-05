@@ -4,6 +4,7 @@ import { Web } from "@/components/web/Web";
 import Mobile from "@/components/mobile/Mobile";
 import localFont from "next/font/local";
 import Head from "next/head";
+import { Experimental } from "@/components/Experimental";
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
@@ -146,7 +147,7 @@ export default function App() {
       <div
         className={`${FaktumTest.variable} ${Pretendard.variable} ${Futura.variable}`}
       >
-        {isWeb ? <Web /> : <Mobile />}
+        {isWeb ? <Experimental /> : <Mobile />}
       </div>
     </>
   );

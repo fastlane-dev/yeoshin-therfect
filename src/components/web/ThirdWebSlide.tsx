@@ -7,7 +7,7 @@ import { useSwiperSlide } from "swiper/react";
 export const ThirdWebSlide = () => {
   const swipeSlide = useSwiperSlide();
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-white">
+    <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9]">
       <div className="flex justify-between">
         <div className="self-start pl-[8.3vw] pt-[15vh]">
           <div className="mb-[110px] flex items-center justify-start gap-[20px]">

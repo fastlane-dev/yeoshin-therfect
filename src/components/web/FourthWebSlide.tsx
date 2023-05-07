@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { InView } from "react-intersection-observer";
+import { InviewComponent } from "../common/InviewComponent";
 
 export const FourthWebSlide = () => {
   return (
@@ -18,12 +20,16 @@ export const FourthWebSlide = () => {
                 alt="first_nozzle"
               />
             </div>
-            <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
-              써말아이
-            </div>
-            <div className="text-[1vw] leading-[2.3vh]">
-              팔자, 눈가주름을 타이트닝
-            </div>
+            <InviewComponent animationClassName="animate-smoothUpSecond">
+              <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
+                써말아이
+              </div>
+            </InviewComponent>
+            <InviewComponent animationClassName={"animate-smoothUpThird"}>
+              <div className="text-[1vw] leading-[2.3vh]">
+                팔자, 눈가주름을 타이트닝
+              </div>
+            </InviewComponent>
           </div>
           <div>
             <div className="flex-center-column">
@@ -38,12 +44,16 @@ export const FourthWebSlide = () => {
                   alt="second_nozzle"
                 />
               </div>
-              <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
-                써말 러빙
-              </div>
-              <div className="text-[0.99vw] leading-[2.3vh]">
-                처짐, 얼굴윤곽을 자극하여 얼굴선 정리
-              </div>
+              <InviewComponent animationClassName={"animate-smoothUpSecond"}>
+                <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
+                  써말 러빙
+                </div>
+              </InviewComponent>
+              <InviewComponent animationClassName={"animate-smoothUpThird"}>
+                <div className="text-[0.99vw] leading-[2.3vh]">
+                  처짐, 얼굴윤곽을 자극하여 얼굴선 정리
+                </div>
+              </InviewComponent>
             </div>
           </div>
           <div>
@@ -59,12 +69,16 @@ export const FourthWebSlide = () => {
                   alt="third_nozzle"
                 />
               </div>
-              <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
-                써말 스탬프
-              </div>
-              <div className="text-[1vw] leading-[2.3vh]">
-                강력한 고주파 에너지를 깊게
-              </div>
+              <InviewComponent animationClassName={"animate-smoothUpSecond"}>
+                <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
+                  써말 스탬프
+                </div>
+              </InviewComponent>
+              <InviewComponent animationClassName={"animate-smoothUpThird"}>
+                <div className="text-[1vw] leading-[2.3vh]">
+                  강력한 고주파 에너지를 깊게
+                </div>
+              </InviewComponent>
             </div>
           </div>
         </div>
@@ -81,12 +95,16 @@ export const FourthWebSlide = () => {
                 alt="first_nozzle"
               />
             </div>
-            <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
-              프락셔널 64P
-            </div>
-            <div className="text-[1vw] leading-[2.3vh]">
-              비교적 깊은 모공과 흉터에 시술
-            </div>
+            <InviewComponent animationClassName={"animate-smoothUpSecond"}>
+              <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
+                프락셔널 64P
+              </div>
+            </InviewComponent>
+            <InviewComponent animationClassName={"animate-smoothUpThird"}>
+              <div className="text-[1vw] leading-[2.3vh]">
+                비교적 깊은 모공과 흉터에 시술
+              </div>
+            </InviewComponent>
           </div>
           <div className="flex-center-column">
             <div className="relative  mb-[50px] h-[21vh] w-[12vw]">
@@ -100,12 +118,16 @@ export const FourthWebSlide = () => {
                 alt="first_nozzle"
               />
             </div>
-            <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
-              프락셔널 100P
-            </div>
-            <div className="text-[1vw] leading-[2.3vh]">
-              비교적 깊은 모공과 흉터에 시술
-            </div>
+            <InviewComponent animationClassName={"animate-smoothUpSecond"}>
+              <div className="mb-[20px] text-[1.5vw] leading-[3.2vh]">
+                프락셔널 100P
+              </div>
+            </InviewComponent>
+            <InviewComponent animationClassName={"animate-smoothUpThird"}>
+              <div className="text-[1vw] leading-[2.3vh]">
+                비교적 깊은 모공과 흉터에 시술
+              </div>
+            </InviewComponent>
           </div>
         </div>
       </div>

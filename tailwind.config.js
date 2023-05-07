@@ -31,6 +31,7 @@ module.exports = {
         smoothUpFirst: "smoothUp 0.6s forwards 0.3s ease-in-out",
         smoothUpSecond: "smoothUp 0.6s forwards 0.5s ease-in-out",
         smoothUpThird: "smoothUp 0.6s forwards 0.7s ease-in-out",
+        colorChange: "colorChange 0.6s forwards ease-in-out",
       },
       keyframes: {
         moveFromDownToUp: {
@@ -62,6 +63,17 @@ module.exports = {
 
           "100%": {
             opacity: 1,
+          },
+        },
+        colorChange: {
+          "0%": {
+            opacity: 0,
+            backgroundColor: "#FF9900",
+          },
+
+          "100%": {
+            opacity: 1,
+            backgroundColor: "#CBF9FF",
           },
         },
       },

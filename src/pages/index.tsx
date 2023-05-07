@@ -147,7 +147,7 @@ export default function App() {
       <div
         className={`${FaktumTest.variable} ${Pretendard.variable} ${Futura.variable}`}
       >
-        {isWeb ? <Experimental /> : <Mobile />}
+        {isWeb ? <Web /> : <Mobile />}
       </div>
     </>
   );

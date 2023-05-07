@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { InView } from "react-intersection-observer";
+import { InviewComponent } from "../common/InviewComponent";
 
 export const FifthWebSlide = () => {
   return (
@@ -9,23 +11,45 @@ export const FifthWebSlide = () => {
           <p className="font-futura text-[30px] font-[500] leading-[39.84px]">
             Principle
           </p>
-          <div>
-            <Image
-              src={"/img/three_dots_white.svg"}
-              alt="three_dots_white"
-              width={31}
-              height={18}
-            />
-          </div>
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <div
+                ref={ref}
+                className="mt-[8px] flex h-[34px] w-full items-center "
+              >
+                <div className="relative h-[18px] w-[31px]">
+                  <span
+                    className={`absolute ${
+                      inView ? "animate-dotAppearFirst" : ""
+                    }  bottom-0 left-0 inline-block h-[5px] w-[5px] rounded-full bg-white opacity-0`}
+                  ></span>
+                  <span
+                    className={`absolute ${
+                      inView ? "animate-dotAppearSecond" : ""
+                    }  left-[9px] top-[4px] inline-block h-[6.3px] w-[6.3px] rounded-full bg-white opacity-0`}
+                  ></span>
+                  <span
+                    className={`absolute ${
+                      inView ? "animate-dotAppearThird" : ""
+                    }  right-0 top-0 inline-block h-[9.5px] w-[9.5px] rounded-full bg-white opacity-0`}
+                  ></span>
+                </div>
+              </div>
+            )}
+          </InView>
         </div>
-        <p className="text-shadow mt-[106px] text-[4vw] leading-[8.5vh]">
-          {"피부 속까지\n고주파 에너지를 전달"}
-        </p>
-        <p className="text-shadow mt-[29vh] text-[1.5vw] leading-[4vh]">
-          {
-            "강력한 고주파 에너지로 조직의 응고를 일으켜 피부탄력에 도움을 줍니다.\n고주파 전달 > 피부속 깊이 고주파 전달 > 피부 저항 및 열 발생 > 피부응고 및 재생 > 피부탄력 도움"
-          }
-        </p>
+        <InviewComponent animationClassName={"animate-smoothUpFirst"}>
+          <p className="text-shadow mt-[106px] text-[4vw] leading-[8.5vh]">
+            {"피부 속까지\n고주파 에너지를 전달"}
+          </p>
+        </InviewComponent>
+        <InviewComponent animationClassName={"animate-smoothUpSecond"}>
+          <p className="text-shadow mt-[29vh] text-[1.5vw] leading-[4vh]">
+            {
+              "강력한 고주파 에너지로 조직의 응고를 일으켜 피부탄력에 도움을 줍니다.\n고주파 전달 > 피부속 깊이 고주파 전달 > 피부 저항 및 열 발생 > 피부응고 및 재생 > 피부탄력 도움"
+            }
+          </p>
+        </InviewComponent>
       </div>
     </section>
   );

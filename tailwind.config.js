@@ -28,6 +28,9 @@ module.exports = {
         dotAppearFirst: "appear 0.6s forwards 0.6s ease-in-out",
         dotAppearSecond: "appear 0.6s forwards 0.9s ease-in-out",
         dotAppearThird: "appear 0.6s forwards 1.2s ease-in-out",
+        smoothUpFirst: "smoothUp 0.6s forwards 0.3s ease-in-out",
+        smoothUpSecond: "smoothUp 0.6s forwards 0.5s ease-in-out",
+        smoothUpThird: "smoothUp 0.6s forwards 0.7s ease-in-out",
       },
       keyframes: {
         moveFromDownToUp: {

@@ -10,105 +10,95 @@ import {
   Controller,
 } from "swiper";
 
-const Container = ({
-  content,
-  setOnlyNestedSwiperEnabled,
-}: {
-  content: any;
-  setOnlyNestedSwiperEnabled?: any;
-}) => {
-  const swiper = useSwiper();
-  const swiperSlide = useSwiperSlide();
-
-  // setOnlyNestedSwiperEnabled(false);
-  useEffect(() => {
-    if (swiperSlide.isActive && content === 1) {
-      console.log("content");
-    }
-  }, [content]);
-
+const Container = ({ content }: { content: any }) => {
   return <div>{content}</div>;
 };
 
 export function Experimental() {
-  const [onlyNestedSwiperEnabled, setOnlyNestedSwiperEnabled] = useState(true);
-
+  const [swiperRef, setSwiperRef] = useState<any>();
+  const [prevOuterNthSlide, setPrevOuterNthSlide] = useState(0);
+  const [prvInnerNthSlide, setPrevInnerNthSlide] = useState(0);
   return (
     <>
       <Swiper
-        className="mySwiper swiper-h"
+        onSwiper={setSwiperRef}
+        className="mySwiper"
         slidesPerView={1}
-        pagination={{
-          clickable: true,
-        }}
         direction={"vertical"}
         mousewheel={true}
         modules={[Mousewheel]}
-        enabled={true}
+        // onTransitionEnd={(swiper)=>{
+        //   const nthOfCurrentSlide = swiper.activeIndex + 1;
+        //   const nthOfPriviouslyVisitedSlide = swiper.previousIndex + 1;
+        // }}
+        onTransitionEnd={(swiper) => {
+          // console.log("swiper.activeIndex", swiper.activeIndex);
+          const nthOfCurrentSlide = swiper.activeIndex + 1;
+          const nthOfPriviouslyVisitedSlide = swiper.previousIndex + 1;
+          setPrevOuterNthSlide(nthOfCurrentSlide);
+          console.log("outer nthOfCurrentSlide", nthOfCurrentSlide);
+          console.log("state outerNthSlide", prevOuterNthSlide);
+          if (nthOfCurrentSlide == 3) {
+            swiperRef.disable();
+            // swiper.dis
+          }
+        }}
       >
+        <SwiperSlide>
+          <Container content={"가"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Container content={"나"} />
+        </SwiperSlide>
         <SwiperSlide>
           <Swiper
             direction={"horizontal"}
             slidesPerView={1}
             mousewheel={true}
             modules={[Mousewheel]}
-            enabled={true}
+            // onTransitionEnd={(swiper)=>{
+            //   const nthOfCurrentSlide = swiper.activeIndex + 1;
+            //   const nthOfPriviouslyVisitedSlide = swiper.previousIndex + 1;
+            // }}
+            onBeforeTransitionStart={(swiper) => {
+              console.log("trnasition start swiper", swiper.activeIndex);
+            }}
+            onTransitionEnd={(swiper) => {
+              const nthOfCurrentSlide = swiper.activeIndex + 1;
+              const nthOfPriviouslyVisitedSlide = swiper.previousIndex + 1;
+              setPrevInnerNthSlide(nthOfCurrentSlide);
+              console.log("inner nthOfCurrentSlide", nthOfCurrentSlide);
+              console.log("state innerNthSlide", prvInnerNthSlide);
+              // if()
+              if (nthOfCurrentSlide == 5) {
+                swiperRef.enable();
+                // swiper.dis
+              }
+            }}
+            // enabled={true}
           >
             <SwiperSlide>
-              <Container
-                content={1}
-                setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-              />
+              <Container content={1} />
             </SwiperSlide>
             <SwiperSlide>
-              <Container
-                content={2}
-                setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-              />
+              <Container content={2} />
             </SwiperSlide>
             <SwiperSlide>
-              <Container
-                content={3}
-                setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-              />
+              <Container content={3} />
             </SwiperSlide>
             <SwiperSlide>
-              <Container
-                content={4}
-                setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-              />
+              <Container content={4} />
             </SwiperSlide>
             <SwiperSlide>
-              <Container
-                content={5}
-                setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-              />
+              <Container content={5} />
             </SwiperSlide>
           </Swiper>
         </SwiperSlide>
         <SwiperSlide>
-          <Container
-            content={"가"}
-            setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-          />
+          <Container content={"다"} />
         </SwiperSlide>
         <SwiperSlide>
-          <Container
-            content={"나"}
-            setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container
-            content={"다"}
-            setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container
-            content={"라"}
-            setOnlyNestedSwiperEnabled={setOnlyNestedSwiperEnabled}
-          />
+          <Container content={"라"} />
         </SwiperSlide>
       </Swiper>
     </>

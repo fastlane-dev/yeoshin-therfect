@@ -58,3 +58,18 @@ td {
   padding-bottom: 30px;
   vertical-align: baseline;
 }
+
+table.mobile td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+table.mobile table {
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+}
+
+table.mobile table tr {
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+}

@@ -6,8 +6,8 @@ import { InviewComponent } from "../common/InviewComponent";
 
 export const SixthMobileSlide = () => {
   return (
-    <section className="relative flex h-screen w-screen flex-col justify-between overflow-hidden bg-black px-[47px] pb-[65px] pt-[50px] font-pretendard font-[400] text-white">
-      <div className="absolute  left-[50%] top-[50%] h-[5.3vh] w-[79vw] -translate-x-1/2 -translate-y-[240%]">
+    <section className="relative flex h-screen w-screen flex-col justify-between overflow-hidden bg-black px-[47px] pb-[83px] pt-[25px] font-pretendard font-[400] text-white">
+      <div className="absolute  left-[50%] top-[50%] h-[5.3vh] w-[79vw] -translate-x-1/2 -translate-y-[350%]">
         <InviewComponent
           threshold={0}
           animationClassName={"animate-smoothUpFirst"}
@@ -31,31 +31,31 @@ export const SixthMobileSlide = () => {
       </div>
       <div className="flex  flex-col gap-[34px]">
         <div className="flex justify-between">
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
         </div>
         <div className="flex justify-between">
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
         </div>
       </div>
 
       <div className="flex flex-col  gap-[34px]">
         <div className="flex justify-between">
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
         </div>
         <div className="flex justify-between">
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
-          <div className="h-[11vw] w-[11vw] bg-main-orange"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
+          <div className="h-[11vw] w-[11vw] bg-main-orange mmd:h-[9vw] mmd:w-[9vw]"></div>
         </div>
       </div>
     </section>

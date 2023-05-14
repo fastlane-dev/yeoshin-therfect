@@ -72,7 +72,7 @@ export const EighthMobileSlide = () => {
           </tbody>
         </table>
       </div>
-      <div className="absolute bottom-0 h-[10px] w-screen bg-main-orange" />
+      <div className="absolute bottom-0 h-[67px] w-screen bg-main-orange" />
     </section>
   ) : (
     <></>

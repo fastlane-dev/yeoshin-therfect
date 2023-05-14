@@ -12,6 +12,7 @@ import { FifthMobileSlide } from "./FifthMobileSlide";
 import { SixthMobileSlide } from "./SixthMobileSlide";
 import { SeventhMobileSlide } from "./SeventhMobileSlide";
 import { EighthMobileSlide } from "./EighthMobileSlide";
+import { NinethMobileSlide } from "./NinethMobileSlide";
 
 export const Mobile = () => {
   return (
@@ -49,6 +50,9 @@ export const Mobile = () => {
       </SwiperSlide>
       <SwiperSlide>
         <EighthMobileSlide />
+      </SwiperSlide>
+      <SwiperSlide>
+        <NinethMobileSlide />
       </SwiperSlide>
     </Swiper>
   );

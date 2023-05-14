@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { Web } from "@/components/web/Web";
-import Mobile from "@/components/mobile/Mobile";
+import { Mobile } from "@/components/mobile/Mobile";
 import localFont from "next/font/local";
 import Head from "next/head";
 

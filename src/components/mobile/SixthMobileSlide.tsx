@@ -6,7 +6,7 @@ import { InviewComponent } from "../common/InviewComponent";
 
 export const SixthMobileSlide = () => {
   return (
-    <section className="relative flex h-screen w-screen flex-col justify-between overflow-hidden bg-black px-[47px] py-[50px] font-pretendard font-[400] text-white">
+    <section className="relative flex h-screen w-screen flex-col justify-between overflow-hidden bg-black px-[47px] pb-[65px] pt-[50px] font-pretendard font-[400] text-white">
       <div className="absolute  left-[50%] top-[50%] h-[5.3vh] w-[79vw] -translate-x-1/2 -translate-y-[240%]">
         <InviewComponent
           threshold={0}

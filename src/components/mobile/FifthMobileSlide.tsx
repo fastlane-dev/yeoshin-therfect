@@ -14,7 +14,7 @@ export const FifthMobileSlide = () => {
           alt="mobile_skin_structure"
         />
       </div>
-      <div className="absolute bottom-[60px] self-start pl-[30px]">
+      <div className="absolute bottom-[120px] self-start pl-[30px]">
         <div className="mb-[8.7vh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Principle

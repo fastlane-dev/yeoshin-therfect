@@ -57,7 +57,7 @@ export const FirstMobileSlide = () => {
           <p className="font-[600]">전달하다</p>
         </div> */}
       </div>
-      \
+
       <div className="relative bottom-[20vw] mx-auto h-[105vh] w-[100vw] msm:bottom-[5vw] msm:h-[145vh] mmd:bottom-[-3vw] mmd:h-[160vh]">
         <Image src={therfectRobot} priority fill alt="therfect_robot" />
       </div>

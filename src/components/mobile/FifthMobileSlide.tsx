@@ -43,7 +43,10 @@ export const FifthMobileSlide = () => {
             )}
           </InView>
         </div>
-        <InviewComponent animationClassName="animate-smoothUpFirst">
+        <InviewComponent
+          threshold={0}
+          animationClassName="animate-smoothUpFirst"
+        >
           <div>
             <p className="mb-[0.1vh] font-futura text-[30px] font-[700]">
               피부 속까지

@@ -8,7 +8,10 @@ export const SixthMobileSlide = () => {
   return (
     <section className="relative flex h-screen w-screen flex-col justify-between overflow-hidden bg-black px-[47px] py-[50px] font-pretendard font-[400] text-white">
       <div className="absolute  left-[50%] top-[50%] h-[5.3vh] w-[79vw] -translate-x-1/2 -translate-y-[240%]">
-        <InviewComponent animationClassName={"animate-smoothUpFirst"}>
+        <InviewComponent
+          threshold={0}
+          animationClassName={"animate-smoothUpFirst"}
+        >
           <div className="flex-center mb-[32px]">
             <Image width={157} height={40} src={ntts} alt="ntts" priority />
           </div>

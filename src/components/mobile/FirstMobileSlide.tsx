@@ -67,7 +67,15 @@ export const FirstMobileSlide = () => {
       </div>
 
       <div className="relative bottom-[20vw] mx-auto h-[105vh] w-[100vw] msm:bottom-[5vw] msm:h-[145vh] mmd:bottom-[-3vw] mmd:h-[160vh]">
-        <Image src={therfectRobot} priority fill alt="therfect_robot" />
+        <Image
+          src={therfectRobot}
+          sizes="(min-width: 480px) 30vw,
+              (min-width: 768px) 50vw,
+              33vw"
+          priority
+          fill
+          alt="therfect_robot"
+        />
       </div>
     </section>
   );

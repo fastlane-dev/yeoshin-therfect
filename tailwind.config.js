@@ -35,8 +35,12 @@ module.exports = {
         dotAppearThird: "appear 0.6s forwards 1.2s ease-in-out",
         smoothUpFirst: "smoothUp 0.6s forwards 0.3s ease-in-out",
         smoothUpSecond: "smoothUp 0.6s forwards 0.5s ease-in-out",
-        smoothUpThird: "smoothUp 0.6s forwards 0.7s ease-in-out",
+        smoothUpThird: "smoothUp 0.6s forwards 0.8s ease-in-out",
         colorChange: "colorChange 0.6s forwards ease-in-out",
+
+        mobileMainLogoAppear: "smoothUp 0.8s forwards 1.5s ease-in-out",
+        mobileMainLogoDisappear:
+          "smoothDisappear 0.8s forwards 1.3s ease-in-out",
       },
       keyframes: {
         moveFromDownToUp: {
@@ -58,6 +62,17 @@ module.exports = {
           "100%": {
             opacity: 1,
             transform: "translateY(0px)",
+          },
+        },
+
+        smoothDisappear: {
+          "0%": {
+            opacity: 1,
+            transform: "translateY(0px)",
+          },
+          "100%": {
+            opacity: 0,
+            transform: "translateY(-20px)",
           },
         },
 

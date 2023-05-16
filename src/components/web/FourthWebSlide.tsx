@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
 export const FourthWebSlide = () => {

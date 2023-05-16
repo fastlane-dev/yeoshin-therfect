@@ -2,7 +2,6 @@ import React from "react";
 
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
-import Image from "next/image";
 // bg-[url('/img/mobile_skin_structure.png')] bg-cover bg-center bg-no-repeat
 export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (

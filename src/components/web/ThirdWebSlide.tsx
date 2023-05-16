@@ -1,13 +1,10 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 
 import bigNozzle from "../../../public/img/big_nozzle.png";
-import { useSwiperSlide } from "swiper/react";
 import { InView } from "react-intersection-observer";
-import { InviewComponent } from "../common/InviewComponent";
 
 export const ThirdWebSlide = () => {
-  const swipeSlide = useSwiperSlide();
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9]">
       <div className="flex justify-between">

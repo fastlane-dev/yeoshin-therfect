@@ -1,9 +1,18 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const EighthWebSlide = () => {
+  const [innerHeight, setInnerHeight] = useState(0);
+
+  useEffect(() => {
+    setInnerHeight(window.innerHeight);
+  }, []);
+
   return (
-    <footer className=" relative h-screen w-screen bg-white font-faktumTest font-[400] ">
+    <footer
+      className=" relative w-screen bg-white font-faktumTest font-[400]"
+      style={{ height: innerHeight }}
+    >
       <div>
         <div className="mx-[150px] mb-[72px] pt-[112px] font-pretendard text-[20px] font-[300] leading-[36px] text-[#555555]">
           <p className="mb-[36px]">{"지금 바로 병원에서 만나보세요."}</p>

@@ -63,10 +63,7 @@ const Nozzle = ({
 
 export const FourthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
-    <section
-      className="flex-center relative w-screen overflow-hidden bg-[#F9F9F9] text-center font-pretendard font-[700]"
-      style={{ height: innerHeight }}
-    >
+    <section className="flex-center relative h-screen w-screen overflow-hidden bg-[#F9F9F9] pt-[9vh] text-center font-pretendard font-[700]">
       <div className="h-screen w-screen px-[31px]">
         <div className="mb-[34px] flex justify-center gap-[60px]">
           <Nozzle

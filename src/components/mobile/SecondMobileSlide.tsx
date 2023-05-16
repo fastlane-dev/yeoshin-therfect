@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
 export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
-  // const [innerHeight, setInnerHeight] = useState(0);
-
-  // useEffect(() => {
-  //   setInnerHeight(window.innerHeight);
-  // }, []);
-
   return (
     <section
       className="relative w-screen overflow-hidden bg-white"

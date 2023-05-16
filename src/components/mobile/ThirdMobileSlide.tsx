@@ -10,8 +10,8 @@ export const ThirdMobileSlide = () => {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9]">
       <div className="">
-        <div className="self-start pl-[30px] pt-[80px]">
-          <div className="mb-[8.7vh] flex items-center justify-start gap-[12px]">
+        <div className="mt-[9.8vh] self-start pl-[30px]">
+          <div className="mb-[7.8vh] flex items-center justify-start gap-[12px]">
             <p className="font-sans text-[20px] font-[400] leading-[23px]">
               Cartridge
             </p>
@@ -44,7 +44,7 @@ export const ThirdMobileSlide = () => {
               <p className="mb-[0.1vh] font-futura text-[30px] font-[500]">
                 5가지 팁
               </p>
-              <p className="mb-[36px] font-pretendard text-[30px] font-[500]">
+              <p className="mb-[3.5vh] font-pretendard text-[30px] font-[500]">
                 3가지 시술방법
               </p>
             </div>
@@ -52,7 +52,7 @@ export const ThirdMobileSlide = () => {
           <InviewComponent animationClassName="animate-smoothUpSecond">
             <div>
               <p
-                className={`mt-[4.3vh] pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
+                className={`pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
               >
                 {
                   "목적에 따라 원하는 팁과 시술방법 선택할 수 있습니다. 부위와 목적에 따라 5가지 팁을 제공하며, 스템프 방식, 러빙 방식, 프락셔널 방식 총 3가지 방식으로 개인별 피부 고민에 맞춰 시술할 수 있습니다."
@@ -62,7 +62,7 @@ export const ThirdMobileSlide = () => {
           </InviewComponent>
         </div>
         <InviewComponent animationClassName="animate-smoothUpThird">
-          <div className="relative bottom-[28vh] h-screen w-screen msm:bottom-[20vh]">
+          <div className="absolute bottom-[-24vh] right-[-148px] h-screen w-[550px] msm:w-[750px] mmd:w-[850px]">
             <Image
               style={{ objectFit: "contain" }}
               src={bigNozzle}

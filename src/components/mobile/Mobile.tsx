@@ -34,31 +34,31 @@ const Mobile = () => {
       height={innerHeight}
     >
       <SwiperSlide>
-        <FirstMobileSlide />
+        <FirstMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
       <SwiperSlide>
-        <SecondMobileSlide />
+        <SecondMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
       <SwiperSlide>
-        <ThirdMobileSlide />
+        <ThirdMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
       <SwiperSlide>
-        <FourthMobileSlide />
+        <FourthMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
       <SwiperSlide>
-        <FifthMobileSlide />
+        <FifthMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
       <SwiperSlide>
-        <SixthMobileSlide />
+        <SixthMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
       <SwiperSlide>
-        <SeventhMobileSlide />
+        <SeventhMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
       <SwiperSlide>
-        <EighthMobileSlide />
+        <EighthMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
       <SwiperSlide>
-        <NinethMobileSlide />
+        <NinethMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
     </Swiper>
   );

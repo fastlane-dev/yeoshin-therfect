@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-export const EighthMobileSlide = () => {
+export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -9,7 +9,10 @@ export const EighthMobileSlide = () => {
   }, []);
 
   return mounted ? (
-    <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]">
+    <section
+      className="relative w-screen overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]"
+      style={{ height: innerHeight }}
+    >
       <div className="mt-[80px] pl-[30px]">
         <div className="text-[30px] font-[400]">Specifications</div>
         <div className="my-[60px]">

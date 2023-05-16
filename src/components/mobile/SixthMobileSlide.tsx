@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import ntts from "../../../public/img/ntts.svg";
 import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
 
-export const SixthMobileSlide = () => {
-  const [innerHeight, setInnerHeight] = useState(0);
-
-  useEffect(() => {
-    setInnerHeight(window.innerHeight);
-  }, []);
+export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
     <section
       className="relative flex w-screen flex-col justify-between overflow-hidden bg-black px-[47px] pt-[30px] font-pretendard font-[400] text-white"

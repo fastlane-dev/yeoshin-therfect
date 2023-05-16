@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
-import therfectRobot from "../../../public/img/mobile_entire_robot.png";
-import Image from "next/image";
+export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
+  // const [innerHeight, setInnerHeight] = useState(0);
 
-export const SecondMobileSlide = () => {
+  // useEffect(() => {
+  //   setInnerHeight(window.innerHeight);
+  // }, []);
+
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-white">
+    <section
+      className="relative w-screen overflow-hidden bg-white"
+      style={{ height: innerHeight }}
+    >
       <div className="mt-[9.8vh] self-start pl-[30px]">
         <div className="mb-[7.8vh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">

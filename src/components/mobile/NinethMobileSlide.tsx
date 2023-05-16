@@ -1,5 +1,5 @@
 import React from "react";
 
-export const NinethMobileSlide = () => {
-  return <div>NinethMobileSlide</div>;
+export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
+  return <div style={{ height: innerHeight }}>NinethMobileSlide</div>;
 };

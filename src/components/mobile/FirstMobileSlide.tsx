@@ -12,9 +12,12 @@ import ball from "../../../public/img/ball.svg";
 </div> */
 }
 
-export const FirstMobileSlide = () => {
+export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden font-futura text-[80px]  font-[500] text-white">
+    <section
+      className="relative w-screen overflow-hidden font-futura text-[80px]  font-[500] text-white"
+      style={{ height: innerHeight }}
+    >
       <div className="absolute right-[16vw] top-[78px] -z-10 h-[9.3vw] w-[9.3vw]">
         <Image
           src={ball}

@@ -6,9 +6,12 @@ import { InviewComponent } from "../common/InviewComponent";
 
 import bigNozzle from "../../../public/img/big_nozzle.png";
 
-export const ThirdMobileSlide = () => {
+export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9]">
+    <section
+      className="relative w-screen overflow-hidden bg-[#F9F9F9]"
+      style={{ height: innerHeight }}
+    >
       <div className="">
         <div className="mt-[9.8vh] self-start pl-[30px]">
           <div className="mb-[7.8vh] flex items-center justify-start gap-[12px]">

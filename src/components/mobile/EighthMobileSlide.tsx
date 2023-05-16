@@ -72,7 +72,10 @@ export const EighthMobileSlide = () => {
           </tbody>
         </table>
       </div>
-      <div className="absolute bottom-0 h-[67px] w-screen bg-main-orange" />
+      <div
+        className="absolute bottom-0 w-screen bg-main-orange"
+        style={{ height: "calc(10px + env(safe-area-inset-bottom))" }}
+      />
     </section>
   ) : (
     <></>

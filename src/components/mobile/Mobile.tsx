@@ -14,7 +14,7 @@ import { SeventhMobileSlide } from "./SeventhMobileSlide";
 import { EighthMobileSlide } from "./EighthMobileSlide";
 import { NinethMobileSlide } from "./NinethMobileSlide";
 
-export const Mobile = () => {
+const Mobile = () => {
   return (
     <Swiper
       direction={"vertical"}
@@ -57,3 +57,5 @@ export const Mobile = () => {
     </Swiper>
   );
 };
+
+export default Mobile;

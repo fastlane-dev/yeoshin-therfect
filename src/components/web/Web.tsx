@@ -14,7 +14,7 @@ import { SixthWebSlideBlue } from "./SixthWebSlideBlue";
 import { SeventhWebSlide } from "./SeventhWebSlide";
 import { EighthWebSlide } from "./EighthWebSlide";
 
-export function Web() {
+export default function Web() {
   return (
     <>
       <Swiper

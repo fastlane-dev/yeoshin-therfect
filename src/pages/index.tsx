@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-import { Web } from "@/components/web/Web";
-import { Mobile } from "@/components/mobile/Mobile";
 import localFont from "next/font/local";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+
+const Web = dynamic(() => import("../components/web/Web"), { ssr: false });
+const Mobile = dynamic(() => import("../components/mobile/Mobile"), {
+  ssr: false,
+});
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",

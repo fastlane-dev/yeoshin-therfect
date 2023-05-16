@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,6 +15,11 @@ import { EighthMobileSlide } from "./EighthMobileSlide";
 import { NinethMobileSlide } from "./NinethMobileSlide";
 
 const Mobile = () => {
+  const [innerHeight, setInnerHeight] = useState(0);
+
+  useEffect(() => {
+    setInnerHeight(window.innerHeight);
+  }, []);
   return (
     <Swiper
       direction={"vertical"}
@@ -26,6 +31,7 @@ const Mobile = () => {
       modules={[Mousewheel]}
       className="mySwiper"
       speed={800}
+      height={innerHeight}
     >
       <SwiperSlide>
         <FirstMobileSlide />

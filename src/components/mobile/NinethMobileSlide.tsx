@@ -1,5 +1,5 @@
 import React from "react";
-
+// nineth mobile
 export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
     <footer

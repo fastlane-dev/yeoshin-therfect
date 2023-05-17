@@ -17,8 +17,8 @@ export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           관한 법률&apos;상의 부정경쟁 행위에 해당합니다. Therfect™, 써펙트™는
           식약처 허가를 받은 의료기기입니다. 범용전기수술기로, 고주파 전류를
           사용하여 조직의 응고에 사용하는 기구입니다. 이 제품은
-          &apos;의료기기&apos;이며, &apos;사용상의 주의사항&apos;과 '사용방법'을
-          잘 읽고 사용하십시오.
+          &apos;의료기기&apos;이며, &apos;사용상의 주의사항&apos;과
+          &apos;사용방법&apos;을 잘 읽고 사용하십시오.
         </p>
       </div>
       <div className="mt-[64px]  font-[400]">

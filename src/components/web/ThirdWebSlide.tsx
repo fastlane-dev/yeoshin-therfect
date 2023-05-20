@@ -54,7 +54,7 @@ export const ThirdWebSlide = () => {
                   </p>
                 </div>
                 <p
-                  className={`font-pretendard text-[1.3vw] font-[400] leading-[4.5vh] ${
+                  className={`font-pretendard text-[1.3vw] font-[300] leading-[4.5vh] sm:text-[1.5vw] sm:leading-[3vh] md:leading-[3.5vh] lg:leading-[4.5vh] xlg:leading-[5vh] ${
                     inView ? "animate-smoothUpSecond" : ""
                   } opacity-0`}
                 >
@@ -66,8 +66,14 @@ export const ThirdWebSlide = () => {
             )}
           </InView>
         </div>
-        <div className="relative top-[30vh] h-[60vh] w-[62vw]  ">
-          <Image src={bigNozzle} priority fill alt="bigNozzle" />
+        <div className="absolute right-0 top-[30vh] h-[60vh] w-[66vw] lg:w-[50vw]">
+          <Image
+            src={bigNozzle}
+            priority
+            fill
+            alt="bigNozzle"
+            className="object-contain"
+          />
         </div>
       </div>
     </section>

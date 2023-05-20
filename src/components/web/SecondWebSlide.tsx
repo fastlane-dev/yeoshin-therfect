@@ -51,7 +51,9 @@ export const SecondWebSlide = () => {
           </InviewComponent>
           <InviewComponent animationClassName="animate-smoothUpSecond">
             <div>
-              <p className={`font-pretendard text-[1.3vw] leading-[4.5vh] `}>
+              <p
+                className={`font-pretendard text-[1.3vw] font-[300] leading-[4.5vh] sm:text-[1.5vw] sm:leading-[3vh] md:leading-[3.5vh] lg:leading-[4.5vh] xlg:leading-[5.5vh]`}
+              >
                 {
                   "식약처 허가와 논문, 그리고 12년간 검증¹된 고성능 고주파 열 에너지.\n¹자사 장비를 전세계 12개국에서 12년 동안 유통하며 효과적인 고주파를\n연구, 개발하였습니다."
                 }
@@ -59,8 +61,14 @@ export const SecondWebSlide = () => {
             </div>
           </InviewComponent>
         </div>
-        <div className="relative h-screen w-[55vw]">
-          <Image src={entireRobot} priority fill alt="entire_robot" />
+        <div className="absolute right-[-19vw] h-screen w-screen">
+          <Image
+            className="object-contain"
+            src={entireRobot}
+            priority
+            fill
+            alt="entire_robot"
+          />
         </div>
       </div>
     </section>

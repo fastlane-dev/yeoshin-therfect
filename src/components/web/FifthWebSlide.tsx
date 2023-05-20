@@ -39,12 +39,12 @@ export const FifthWebSlide = () => {
           </InView>
         </div>
         <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-          <p className="text-shadow mt-[106px] text-[4vw] leading-[8.5vh]">
+          <p className="text-shadow mt-[106px] text-[4vw] leading-[6.5vh] md:leading-[8.5vh]">
             {"피부 속까지\n고주파 에너지를 전달"}
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-          <p className="text-shadow mt-[29vh] text-[1.5vw] leading-[4vh]">
+          <p className="text-shadow mt-[29vh] text-[2vw] leading-[4vh] md:text-[1.5vw]">
             {
               "강력한 고주파 에너지로 조직의 응고를 일으켜 피부탄력에 도움을 줍니다.\n고주파 전달 > 피부속 깊이 고주파 전달 > 피부 저항 및 열 발생 > 피부응고 및 재생 > 피부탄력 도움"
             }

@@ -7,14 +7,14 @@ import { InviewComponent } from "../common/InviewComponent";
 export const SixthWebSlide = () => {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-black text-white">
-      <div className="absolute  left-[50%] top-[50%] h-[13vh] w-[20vw] -translate-x-1/2 -translate-y-[80%]">
+      <div className="absolute  left-[50%] top-[50%] h-fit w-fit -translate-x-1/2 -translate-y-[80%]">
         <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-          <div className="relative h-[13vh] w-[20vw]">
+          <div className="relative mx-auto h-[13vh] sm:w-[29vw] md:w-[20vw]">
             <Image fill src={ntts} alt="ntts" priority />
           </div>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-          <p className="relative left-[-9px] text-center font-pretendard text-[1.3vw] font-[400] leading-[2vw]">
+          <p className="relative left-[-9px] text-center font-pretendard font-[400] sm:text-[2vw] sm:leading-[4vw] md:text-[1.3vw] md:leading-[2vw]">
             {"심부열을 효과적으로 전달하는 자체\n개발한 독특한 열전달 구조³"}
           </p>
         </InviewComponent>

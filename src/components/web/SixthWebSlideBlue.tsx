@@ -6,17 +6,17 @@ export const SixthWebSlideBlue = () => {
     <section className="relative h-screen w-screen overflow-hidden bg-black text-white">
       <div className="absolute  left-[50%] top-[50%] -translate-x-1/2 -translate-y-[50%]">
         <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-          <div>
-            <span className="font-futura text-[6.2vw]">ACTIVE</span>
+          <div className="mx-auto h-fit w-fit">
+            <p className="font-futura text-[6.2vw]">ACTIVE</p>
             <p className="relative top-[-15px] mb-[1vh] text-center font-futura text-[2.1vw] font-[500]">
               온도 컨트롤
             </p>
           </div>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-          <p className="relative left-[-9px] text-center font-pretendard text-[1.3vw] font-[400] leading-[2.5vw] ">
-            <span className="block">시술 목적에 따라 피부 온도</span>
-            <span className="block">실시간으로 체크해 빈틈없이 시술⁴</span>
+          <p className="left-[-9px] text-center font-pretendard font-[400] leading-[2.5vw] sm:text-[1.6vw] md:text-[1.3vw] ">
+            <p>시술 목적에 따라 피부 온도</p>
+            <p>실시간으로 체크해 빈틈없이 시술</p>
           </p>
         </InviewComponent>
       </div>

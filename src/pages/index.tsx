@@ -120,9 +120,9 @@ export default function App() {
   const [isWeb, setIsWeb] = useState(true);
 
   useEffect(() => {
-    setIsWeb(window.innerWidth > 1024);
+    setIsWeb(window.innerWidth > 800);
     window.addEventListener("resize", () => {
-      if (window.innerWidth < 1024) {
+      if (window.innerWidth < 800) {
         setIsWeb(false);
       } else {
         setIsWeb(true);
@@ -131,7 +131,7 @@ export default function App() {
 
     return () => {
       window.removeEventListener("resize", () => {
-        if (window.innerWidth < 1024) {
+        if (window.innerWidth < 800) {
           setIsWeb(false);
         } else {
           setIsWeb(true);

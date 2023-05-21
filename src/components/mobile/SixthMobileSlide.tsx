@@ -28,7 +28,7 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpThird"}>
-          <p className="relative font-pretendard text-[16px] font-[400] leading-[30px] text-[#696969]">
+          <p className="mshs:leading-[24px] relative font-pretendard text-[13px] font-[400] leading-[30px] text-[#696969]">
             {
               "Non-pole Therma Transmission Structures 자사에서 직접 개발한 독특한 열전달 구조로, 효과적으로 고주파 에너지를 표피와 진피에 전달합니다."
             }

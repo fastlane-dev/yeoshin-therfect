@@ -63,7 +63,7 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </InviewComponent>
       </div>
       <InviewComponent animationClassName={"animate-smoothUpThird"}>
-        <div className="absolute bottom-[-65dvw] z-[20] mx-auto h-[100dvh] w-[100dvw] msh:bottom-[-76dvw] msm:bottom-[-52vw]">
+        <div className="mshs:bottom-[-76dvw] absolute bottom-[-65dvw] z-[20] mx-auto h-[100dvh] w-[100dvw] msm:bottom-[-52vw]">
           <Image
             src={therfectRobot}
             priority

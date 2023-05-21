@@ -2,14 +2,17 @@ import React from "react";
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
+import therfectRobot from "../../../public/img/second_mobile_robot.png";
+import Image from "next/image";
+
 export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
     <section
       className="relative w-screen overflow-hidden bg-white"
       style={{ height: innerHeight }}
     >
-      <div className="mt-[9.8vh] self-start pl-[30px]">
-        <div className="mb-[7.8vh] flex items-center justify-start gap-[12px]">
+      <div className="mt-[9.8dvh] self-start pl-[30px]">
+        <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Product
           </p>
@@ -39,10 +42,10 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
         <InviewComponent animationClassName="animate-smoothUpFirst">
           <div>
-            <p className="mb-[0.1vh] font-futura text-[30px] font-[500]">
+            <p className="mb-[0.1dvh] font-futura text-[30px] font-[500]">
               4MHz
             </p>
-            <p className="mb-[3.9vh] font-pretendard text-[30px] font-[500]">
+            <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[500]">
               고성능 고주파
             </p>
           </div>
@@ -60,15 +63,16 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </InviewComponent>
       </div>
       <InviewComponent animationClassName={"animate-smoothUpThird"}>
-        <div className="absolute h-[50vh] w-screen">
-          <img
-            className="object-contain"
-            src={"/img/mobile_entire_robot.png"}
+        <div className="absolute bottom-[-65dvw] z-[20] mx-auto h-[100dvh] w-[100dvw] msh:bottom-[-76dvw] msm:bottom-[-52vw]">
+          <Image
+            src={therfectRobot}
+            priority
+            fill
             alt="therfect_robot"
+            className="object-contain"
           />
         </div>
       </InviewComponent>
     </section>
   );
 };
-// msm:bottom-[-6vw] msm:h-[90vh] mmd:bottom-[-3vw] mmd:h-[94vh]

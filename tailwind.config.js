@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        msh: { raw: "(max-height: 664px)" },
         msm: { raw: "(min-width: 480px)" },
         mmd: { raw: "(min-width: 768px)" },
         sm: { raw: "(min-width: 800px)" },

@@ -8,8 +8,8 @@ import ball from "../../../public/img/ball.svg";
 
 export const FirstWebSlide = () => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden font-futura text-[80px]  font-[500] text-white">
-      <div className="absolute left-[26vw] top-[78px] -z-10 h-[2vw] w-[2vw]">
+    <section className="relative h-screen w-screen overflow-hidden bg-[#f68e0f] font-futura  text-[80px] font-[500] text-white">
+      <div className="absolute left-[26vw] top-[78px] h-[2vw] w-[2vw]">
         <Image
           src={ball}
           priority
@@ -18,7 +18,7 @@ export const FirstWebSlide = () => {
           alt="therfect_logo"
         />
       </div>
-      <div className="absolute left-[52vw] top-[66.04px] -z-10 h-[4vw] w-[4vw]">
+      <div className="absolute left-[52vw] top-[66.04px] h-[4vw] w-[4vw]">
         <Image
           src={ball}
           priority
@@ -28,7 +28,7 @@ export const FirstWebSlide = () => {
         />
       </div>
 
-      <div className="absolute left-[9vw] top-[229px] -z-10 h-[6.3vw] w-[6.3vw]">
+      <div className="absolute left-[9vw] top-[229px] h-[6.3vw] w-[6.3vw]">
         <Image
           src={ball}
           priority
@@ -37,7 +37,7 @@ export const FirstWebSlide = () => {
           alt="therfect_logo"
         />
       </div>
-      <div className="absolute left-[70vw] top-[250px] -z-10 h-[6.5vw] w-[6.5vw]">
+      <div className="absolute left-[70vw] top-[250px] h-[6.5vw] w-[6.5vw]">
         <Image
           src={ball}
           priority
@@ -46,7 +46,7 @@ export const FirstWebSlide = () => {
           alt="therfect_logo"
         />
       </div>
-      <div className="absolute bottom-[85px] left-[15vw] -z-10 h-[14.5vw] w-[14.5vw]">
+      <div className="absolute bottom-[85px] left-[15vw] h-[14.5vw] w-[14.5vw]">
         <Image
           src={ball}
           priority
@@ -55,7 +55,7 @@ export const FirstWebSlide = () => {
           alt="therfect_logo"
         />
       </div>
-      <div className="absolute bottom-[-13vw] left-[60vw] -z-10 h-[27vw] w-[27vw]">
+      <div className="absolute bottom-[-13vw] left-[60vw] h-[27vw] w-[27vw]">
         <Image
           src={ball}
           priority
@@ -65,7 +65,7 @@ export const FirstWebSlide = () => {
         />
       </div>
       <nav className="flex-center mt-[64px] justify-between px-[162px]">
-        <div>
+        <div className=" z-[20]">
           <Image src={logoSvg} height={33} width={160} alt="therfect_logo" />
         </div>
         <div className="flex items-center gap-[10px]">
@@ -79,7 +79,7 @@ export const FirstWebSlide = () => {
           <p className="font-[400]">정교하고</p>
           <p className="font-[600]">효과적으로</p>
         </div>
-        <div className="relative h-[83vh] w-[41vw]">
+        <div className="relative z-[20] h-[83vh] w-[41vw]">
           <Image src={therfectRobot} priority fill alt="therfect_robot" />
         </div>
         <div className="relative top-[-10vh] flex flex-col gap-[17px]">

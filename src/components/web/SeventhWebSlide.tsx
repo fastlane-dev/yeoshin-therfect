@@ -10,9 +10,9 @@ export const SeventhWebSlide = () => {
 
   return mounted ? (
     <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]">
-      <div className="pl-[8vw] pt-[14vh]">
+      <div className="pl-[8dvw] pt-[14dvh]">
         <div className="text-[30px] font-[400]">Specifications</div>
-        <div className="mb-[6vh] mt-[16vh]">
+        <div className="mb-[6dvh] mt-[16dvh]">
           <Image
             priority
             width={249}
@@ -22,8 +22,8 @@ export const SeventhWebSlide = () => {
           />
         </div>
       </div>
-      <div className="flex items-start gap-[6vw] px-[8vw]">
-        <table className="w-[90%] text-[1.2vw] leading-[2.5vh]">
+      <div className="flex items-start gap-[6dvw] px-[8dvw]">
+        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh]">
           <tbody>
             <tr>
               <td className="">Type</td>
@@ -48,7 +48,7 @@ export const SeventhWebSlide = () => {
             </tr>
           </tbody>
         </table>
-        <table className="w-[90%] text-[1.2vw] leading-[2.5vh]">
+        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh]">
           <tbody>
             <tr>
               <td>Type of tip</td>

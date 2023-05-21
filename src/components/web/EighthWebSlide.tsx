@@ -3,7 +3,7 @@ import React from "react";
 
 export const EighthWebSlide = () => {
   return (
-    <footer className=" relative h-screen w-screen bg-white font-faktumTest font-[400] ">
+    <footer className=" relative h-screen w-screen bg-white font-faktumTest font-[400]">
       <div>
         <div className="mx-[150px] mb-[72px] pt-[112px] font-pretendard text-[20px] font-[300] leading-[36px] text-[#555555]">
           <p className="mb-[36px]">{"지금 바로 병원에서 만나보세요."}</p>
@@ -19,7 +19,7 @@ export const EighthWebSlide = () => {
         <div className="flex-center-column items-start gap-[30px] text-[18px] leading-[24px]">
           <div className="flex-center gap-[50px] font-[200]">
             <p>TEL. 070-4858-4686</p>
-            <p>email. beauty@ysmedi.kr</p>
+            <p>Email. beauty@ysmedi.kr</p>
           </div>
           <div className="flex-center-column items-start gap-[5px]">
             <p className="font-pretendard font-[300]">

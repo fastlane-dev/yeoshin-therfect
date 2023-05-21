@@ -20,10 +20,11 @@
 
 html,
 body {
-  background-color: #f68e0f;
+  background-color: transparent;
   max-width: 100%;
   overflow-x: hidden;
   white-space: pre-wrap;
+  height: -webkit-fill-available;
 }
 
 body::-webkit-scrollbar {
@@ -31,12 +32,8 @@ body::-webkit-scrollbar {
 }
 
 .swiper {
-  width: 100%;
-  max-height: 100vh;
-}
-
-.swiper {
-  max-height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
 }
 
 .text-shadow {
@@ -61,4 +58,19 @@ td {
   padding-top: 30px;
   padding-bottom: 30px;
   vertical-align: baseline;
+}
+
+table.mobile td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+table.mobile table {
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+}
+
+table.mobile table tr {
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
 }

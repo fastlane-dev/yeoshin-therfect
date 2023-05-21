@@ -1,18 +1,20 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Mousewheel, Pagination } from "swiper";
+import { Mousewheel } from "swiper";
+
 import { FirstWebSlide } from "./FirstWebSlide";
 import { SecondWebSlide } from "./SecondWebSlide";
 import { ThirdWebSlide } from "./ThirdWebSlide";
 import { FourthWebSlide } from "./FourthWebSlide";
 import { FifthWebSlide } from "./FifthWebSlide";
 import { SixthWebSlide } from "./SixthWebSlide";
+import { SixthWebSlideBlue } from "./SixthWebSlideBlue";
 import { SeventhWebSlide } from "./SeventhWebSlide";
 import { EighthWebSlide } from "./EighthWebSlide";
 
-export function Web() {
+export default function Web() {
   return (
     <>
       <Swiper
@@ -43,6 +45,9 @@ export function Web() {
         </SwiperSlide>
         <SwiperSlide>
           <SixthWebSlide />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SixthWebSlideBlue />
         </SwiperSlide>
         <SwiperSlide>
           <SeventhWebSlide />

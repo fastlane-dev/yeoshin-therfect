@@ -11,7 +11,7 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       className="relative w-screen overflow-hidden bg-white"
       style={{ height: innerHeight }}
     >
-      <div className="mt-[9.8dvh] self-start pl-[30px]">
+      <div className="relative z-[30] mt-[9.8dvh] self-start pl-[30px]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Product
@@ -63,7 +63,7 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </InviewComponent>
       </div>
       <InviewComponent animationClassName={"animate-smoothUpThird"}>
-        <div className="mshs:bottom-[-76dvw] absolute bottom-[-65dvw] z-[20] mx-auto h-[100dvh] w-[100dvw] msm:bottom-[-52vw]">
+        <div className="relative bottom-[60dvw] z-[20] mx-auto mt-[40px] h-[100dvh] w-[100dvw] mshs:bottom-[40dvw] msm:bottom-[7vw] mmd:bottom-[0vw]">
           <Image
             src={therfectRobot}
             priority

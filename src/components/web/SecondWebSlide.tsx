@@ -9,7 +9,7 @@ export const SecondWebSlide = () => {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-white">
       <div className="flex justify-between">
-        <div className="self-start pl-[8.3vw] pt-[15vh]">
+        <div className="self-start pl-[8.3dvw] pt-[15dvh]">
           <div className="mb-[110px] flex items-center justify-start gap-[20px]">
             <p className="font-futura text-[30px] font-[500] leading-[40px]">
               Product
@@ -43,8 +43,8 @@ export const SecondWebSlide = () => {
           </div>
           <InviewComponent animationClassName="animate-smoothUpFirst">
             <div>
-              <p className="font-futura text-[4vw] leading-[8vh]">4MHz</p>
-              <p className="mb-[36px] font-pretendard text-[4vw] leading-[8.7vh]">
+              <p className="font-futura text-[4dvw] leading-[8dvh]">4MHz</p>
+              <p className="mb-[36px] font-pretendard text-[4dvw] leading-[8.7dvh]">
                 고성능 고주파
               </p>
             </div>
@@ -52,7 +52,7 @@ export const SecondWebSlide = () => {
           <InviewComponent animationClassName="animate-smoothUpSecond">
             <div>
               <p
-                className={`font-pretendard text-[1.3vw] font-[300] leading-[4.5vh] sm:text-[1.5vw] sm:leading-[3vh] md:leading-[3.5vh] lg:leading-[4.5vh] xlg:leading-[5.5vh]`}
+                className={`font-pretendard text-[1.3dvw] font-[300] leading-[4.5dvh] sm:text-[1.5dvw] sm:leading-[3dvh] md:leading-[3.5dvh] lg:leading-[4.5dvh] xlg:leading-[5.5dvh]`}
               >
                 {
                   "식약처 허가와 논문, 그리고 12년간 검증된 고성능 고주파 열 에너지.\n자사 장비를 전세계 12개국에서 12년 동안 유통하며 효과적인 고주파를\n연구, 개발하였습니다."
@@ -61,7 +61,7 @@ export const SecondWebSlide = () => {
             </div>
           </InviewComponent>
         </div>
-        <div className="absolute right-[-19vw] h-screen w-screen">
+        <div className="absolute right-[-19dvw] h-screen w-screen">
           <Image
             className="object-contain"
             src={entireRobot}

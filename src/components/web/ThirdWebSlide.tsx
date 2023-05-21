@@ -8,7 +8,7 @@ export const ThirdWebSlide = () => {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9]">
       <div className="flex justify-between">
-        <div className="self-start pl-[8.3vw] pt-[15vh]">
+        <div className="self-start pl-[8.3dvw] pt-[15dvh]">
           <div className="mb-[110px] flex items-center justify-start gap-[20px]">
             <p className="font-sans text-[30px] font-[400] leading-[40px]">
               Catridge
@@ -49,12 +49,12 @@ export const ThirdWebSlide = () => {
                     inView ? "animate-smoothUpFirst" : ""
                   } opacity-0`}
                 >
-                  <p className="mb-[36px] font-pretendard text-[4vw] leading-[8.7vh]">
+                  <p className="mb-[36px] font-pretendard text-[4dvw] leading-[8.7dvh]">
                     {"5가지 팁,\n3가지 시술방법"}
                   </p>
                 </div>
                 <p
-                  className={`font-pretendard text-[1.3vw] font-[300] leading-[4.5vh] sm:text-[1.5vw] sm:leading-[3vh] md:leading-[3.5vh] lg:leading-[4.5vh] xlg:leading-[5vh] ${
+                  className={`font-pretendard text-[1.3dvw] font-[300] leading-[4.5dvh] sm:text-[1.5dvw] sm:leading-[3dvh] md:leading-[3.5dvh] lg:leading-[4.5dvh] xlg:leading-[5dvh] ${
                     inView ? "animate-smoothUpSecond" : ""
                   } opacity-0`}
                 >
@@ -66,7 +66,7 @@ export const ThirdWebSlide = () => {
             )}
           </InView>
         </div>
-        <div className="absolute right-0 top-[30vh] h-[60vh] w-[66vw] lg:w-[50vw]">
+        <div className="absolute right-0 top-[30dvh] h-[60dvh] w-[66dvw] lg:w-[50dvw]">
           <Image
             src={bigNozzle}
             priority

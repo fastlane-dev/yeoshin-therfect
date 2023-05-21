@@ -65,7 +65,7 @@ export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </InviewComponent>
         </div>
         <InviewComponent animationClassName="animate-smoothUpThird">
-          <div className="mshs:bottom-[-29dvh] mshs:right-[-22px] mshs:w-[400px]  mshm:w-[750px] absolute bottom-[-24dvh] right-[-148px] h-screen w-[550px] mmhd:w-[850px]">
+          <div className="absolute bottom-[-24dvh] right-[-148px]  h-screen w-[550px] mshs:bottom-[-29dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[750px] mmhd:w-[850px]">
             <Image
               style={{ objectFit: "contain" }}
               src={bigNozzle}

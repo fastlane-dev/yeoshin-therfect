@@ -20,7 +20,7 @@
 
 html,
 body {
-  background-color: #f68e0f;
+  background-color: transparent;
   max-width: 100%;
   overflow-x: hidden;
   white-space: pre-wrap;

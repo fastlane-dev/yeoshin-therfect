@@ -15,7 +15,7 @@ export const SixthWebSlide = () => {
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond"}>
           <p className="relative left-[-9px] text-center font-pretendard font-[400] sm:text-[2vw] sm:leading-[4vw] md:text-[1.3vw] md:leading-[2vw]">
-            {"심부열을 효과적으로 전달하는 자체\n개발한 독특한 열전달 구조³"}
+            {"심부열을 효과적으로 전달하는 자체\n개발한 독특한 열전달 구조"}
           </p>
         </InviewComponent>
       </div>
@@ -47,7 +47,7 @@ export const SixthWebSlide = () => {
       </div>
       <InviewComponent animationClassName={"animate-smoothUpThird"}>
         <div className="flex-center relative top-[-80px] w-screen font-pretendard text-[1.3vw] font-[400] leading-[2vw] text-[#696969]">
-          ³Non-pole Therma Transmission Structures 자사에서 직접 개발한 독특한
+          Non-pole Therma Transmission Structures 자사에서 직접 개발한 독특한
           열전달 구조로, 효과적으로 고주파 에너지를 표피와 진피에 전달합니다.
         </div>
       </InviewComponent>

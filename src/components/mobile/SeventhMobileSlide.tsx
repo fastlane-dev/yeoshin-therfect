@@ -23,13 +23,13 @@ export const SeventhMobileSlide = ({
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond"}>
           <p className="relative mb-[20px] text-center font-pretendard text-[16px] leading-[30px]">
-            {"시술 목적에 따라 피부 온도를\n실시간으로 체크해 빈틈없이 시술⁴"}
+            {"시술 목적에 따라 피부 온도를\n실시간으로 체크해 빈틈없이 시술"}
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpThird"}>
           <p className="relative font-pretendard text-[16px] leading-[30px] text-[#696969]">
             {
-              "⁴부드럽고 강력한 4MHz 고주파를 롱펄스 패턴으로 조사하여 통증은 줄이고, 즉각적으로 피부 온도를 측정하여 화상의 위험을 줄였습니다."
+              "부드럽고 강력한 4MHz 고주파를 롱펄스 패턴으로 조사하여 통증은 줄이고, 즉각적으로 피부 온도를 측정하여 화상의 위험을 줄였습니다."
             }
           </p>
         </InviewComponent>

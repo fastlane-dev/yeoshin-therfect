@@ -24,13 +24,13 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond"}>
           <p className="relative mb-[19px] text-center font-pretendard text-[16px] font-[400] leading-[30px]">
-            {"심부열을 효과적으로 전달하는 자체\n개발한 독특한 열전달 구조³"}
+            {"심부열을 효과적으로 전달하는 자체\n개발한 독특한 열전달 구조"}
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpThird"}>
           <p className="relative font-pretendard text-[16px] font-[400] leading-[30px] text-[#696969]">
             {
-              "³Non-pole Therma Transmission Structures 자사에서 직접 개발한 독특한 열전달 구조로, 효과적으로 고주파 에너지를 표피와 진피에 전달합니다."
+              "Non-pole Therma Transmission Structures 자사에서 직접 개발한 독특한 열전달 구조로, 효과적으로 고주파 에너지를 표피와 진피에 전달합니다."
             }
           </p>
         </InviewComponent>

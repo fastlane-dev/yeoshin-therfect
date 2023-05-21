@@ -20,7 +20,7 @@ export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         className="absolute pl-[30px]"
         style={{ bottom: "calc(80px + env(safe-area-inset-bottom))" }}
       >
-        <div className="mb-[8.7vh] flex items-center justify-start gap-[12px]">
+        <div className="mb-[8.7dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Principle
           </p>
@@ -53,7 +53,7 @@ export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           animationClassName="animate-smoothUpFirst"
         >
           <div>
-            <p className="mb-[0.1vh] font-futura text-[30px] font-[700]">
+            <p className="mb-[0.1dvh] font-futura text-[30px] font-[700]">
               피부 속까지
             </p>
             <p className="mb-[36px] font-pretendard text-[30px] font-[700]">
@@ -64,7 +64,7 @@ export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         <InviewComponent animationClassName="animate-smoothUpSecond">
           <div>
             <p
-              className={`mt-[4.3vh] pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
+              className={`mt-[4.3dvh] pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
             >
               {
                 "강력한 고주파 에너지로 조직의 응고를 일으켜 피부탄력에 도움을 줍니다.\n고주파 전달 > 피부속 깊이 고주파 전달 > 피부 저항 및 열 발생 > 피부응고 및 재생 > 피부탄력 도움"

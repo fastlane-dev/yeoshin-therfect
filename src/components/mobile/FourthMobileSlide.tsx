@@ -35,22 +35,22 @@ const Nozzle = ({
         }}
       >
         <img
-          sizes="(max-width: 768px) 100vw,
-          (max-width: 1200px) 50vw,
-          33vw"
+          sizes="(max-width: 768px) 100dvw,
+          (max-width: 1200px) 50dvw,
+          33dvw"
           className="h-full w-full object-contain"
           src={imgSrc}
           alt="first_nozzle"
         />
       </div>
       <InviewComponent animationClassName="animate-smoothUpFirst">
-        <div className="mb-[0.8vh]" style={{ fontSize: titleSize }}>
+        <div className="mb-[0.8dvh]" style={{ fontSize: titleSize }}>
           {title}
         </div>
       </InviewComponent>
       <InviewComponent animationClassName={"animate-smoothUpSecond"}>
         <div
-          className="text-[4vw] font-[600] leading-[3vh]"
+          className="text-[4dvw] font-[600] leading-[3dvh]"
           style={{ lineHeight: subTitleHeight, fontSize: subTitleSize }}
         >
           {subTitle}
@@ -62,45 +62,45 @@ const Nozzle = ({
 
 export const FourthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
-    <section className="flex-center relative h-screen w-screen overflow-hidden bg-[#F9F9F9] pt-[9vh] text-center font-pretendard font-[700]">
+    <section className="flex-center relative h-screen w-screen overflow-hidden bg-[#F9F9F9] pt-[9dvh] text-center font-pretendard font-[700]">
       <div className="flex flex-col">
         <div className="mb-[34px] flex justify-center gap-[60px]">
           <div className="flex-center-column">
-            <div className="relative  mb-[20px] w-[31vw]">
+            <div className="relative  mb-[20px] w-[31dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/first_nozzle.png"
                 alt="first_nozzle"
               />
             </div>
             <InviewComponent animationClassName="animate-smoothUpFirst">
-              <div className="mb-[0.8vh] text-[5vw]">써말아이</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">써말아이</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"팔자, 눈가주름을\n타이트닝"}
               </div>
             </InviewComponent>
           </div>
           <div className="flex-center-column">
-            <div className="relative  mb-[20px] w-[31vw]">
+            <div className="relative  mb-[20px] w-[31dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/fourth_nozzle.png"
                 alt="first_nozzle"
               />
             </div>
             <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-              <div className="mb-[0.8vh] text-[5vw]">프락셔널 64P</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">프락셔널 64P</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"비교적 깊은 모공과\n흉터에 시술"}
               </div>
             </InviewComponent>
@@ -108,41 +108,41 @@ export const FourthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
         <div className="mb-[34px] flex justify-center gap-[60px]">
           <div className="flex-center-column">
-            <div className="relative mb-[20px] w-[29vw]">
+            <div className="relative mb-[20px] w-[29dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/second_nozzle.png"
                 alt="second_nozzle"
               />
             </div>
             <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-              <div className="mb-[0.8vh] text-[5vw]">써말 러빙</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">써말 러빙</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"처짐, 얼굴윤곽을\n자극하여 얼굴선 정리"}
               </div>
             </InviewComponent>
           </div>
           <div className="flex-center-column">
-            <div className="relative  mb-[20px] w-[31vw]">
+            <div className="relative  mb-[20px] w-[31dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/fifth_nozzle.png"
                 alt="first_nozzle"
               />
             </div>
             <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-              <div className="mb-[0.8vh] text-[5vw]">프락셔널 100P</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">프락셔널 100P</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"비교적 깊은 모공과\n흉터에 시술"}
               </div>
             </InviewComponent>
@@ -150,26 +150,26 @@ export const FourthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
         <div className="flex justify-center gap-[60px]">
           <div className="flex-center-column">
-            <div className="relative mb-[20px] w-[31vw]">
+            <div className="relative mb-[20px] w-[31dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/third_nozzle.png"
                 alt="third_nozzle"
               />
             </div>
             <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-              <div className="mb-[0.8vh] text-[5vw]">써말 스탬프</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">써말 스탬프</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"강력한 고주파\n에너지를 깊게"}
               </div>
             </InviewComponent>
           </div>
-          <div className="w-[31vw]"></div>
+          <div className="w-[31dvw]"></div>
         </div>
       </div>
     </section>
@@ -180,41 +180,41 @@ export const FourthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   /*  <div className="flex flex-col">
         <div className="mb-[34px] flex justify-center gap-[60px]">
           <div className="flex-center-column">
-            <div className="relative  mb-[20px] w-[31vw]">
+            <div className="relative  mb-[20px] w-[31dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/first_nozzle.png"
                 alt="first_nozzle"
               />
             </div>
             <InviewComponent animationClassName="animate-smoothUpFirst">
-              <div className="mb-[0.8vh] text-[5vw]">써말아이</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">써말아이</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"팔자, 눈가주름을\n타이트닝"}
               </div>
             </InviewComponent>
           </div>
           <div className="flex-center-column">
-            <div className="relative  mb-[20px] w-[31vw]">
+            <div className="relative  mb-[20px] w-[31dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/fourth_nozzle.png"
                 alt="first_nozzle"
               />
             </div>
             <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-              <div className="mb-[0.8vh] text-[5vw]">프락셔널 64P</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">프락셔널 64P</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"비교적 깊은 모공과\n흉터에 시술"}
               </div>
             </InviewComponent>
@@ -222,41 +222,41 @@ export const FourthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
         <div className="mb-[34px] flex justify-center gap-[60px]">
           <div className="flex-center-column">
-            <div className="relative mb-[20px] w-[29vw]">
+            <div className="relative mb-[20px] w-[29dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/second_nozzle.png"
                 alt="second_nozzle"
               />
             </div>
             <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-              <div className="mb-[0.8vh] text-[5vw]">써말 러빙</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">써말 러빙</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"처짐, 얼굴윤곽을\n자극하여 얼굴선 정리"}
               </div>
             </InviewComponent>
           </div>
           <div className="flex-center-column">
-            <div className="relative  mb-[20px] w-[31vw]">
+            <div className="relative  mb-[20px] w-[31dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/fifth_nozzle.png"
                 alt="first_nozzle"
               />
             </div>
             <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-              <div className="mb-[0.8vh] text-[5vw]">프락셔널 100P</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">프락셔널 100P</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"비교적 깊은 모공과\n흉터에 시술"}
               </div>
             </InviewComponent>
@@ -264,26 +264,26 @@ export const FourthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
         <div className="flex justify-center gap-[60px]">
           <div className="flex-center-column">
-            <div className="relative mb-[20px] w-[31vw]">
+            <div className="relative mb-[20px] w-[31dvw]">
               <img
-                sizes="(max-width: 768px) 100vw,
-(max-width: 1200px) 50vw,
-33vw"
+                sizes="(max-width: 768px) 100dvw,
+(max-width: 1200px) 50dvw,
+33dvw"
                 className="h-full w-full object-contain"
                 src="/img/third_nozzle.png"
                 alt="third_nozzle"
               />
             </div>
             <InviewComponent animationClassName={"animate-smoothUpFirst"}>
-              <div className="mb-[0.8vh] text-[5vw]">써말 스탬프</div>
+              <div className="mb-[0.8dvh] text-[5dvw]">써말 스탬프</div>
             </InviewComponent>
             <InviewComponent animationClassName={"animate-smoothUpSecond"}>
-              <div className="text-[4vw] font-[600] leading-[3vh]">
+              <div className="text-[4dvw] font-[600] leading-[3dvh]">
                 {"강력한 고주파\n에너지를 깊게"}
               </div>
             </InviewComponent>
           </div>
-          <div className="w-[31vw]"></div>
+          <div className="w-[31dvw]"></div>
         </div>
       </div> */
 }

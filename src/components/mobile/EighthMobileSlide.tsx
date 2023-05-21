@@ -25,8 +25,8 @@ export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           />
         </div>
       </div>
-      <div className="flex items-start gap-[6vw] px-[30px]">
-        <table className="mobile w-screen table-fixed text-[2.6vw] leading-[11.5px] mmd:text-[2vw]">
+      <div className="flex items-start gap-[6dvw] px-[30px]">
+        <table className="mobile w-screen table-fixed text-[2.6dvw] leading-[11.5px] mmd:text-[2dvw]">
           <tbody>
             <tr>
               <td width={"30%"}>Type</td>
@@ -57,7 +57,7 @@ export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
               </td>
             </tr>
             <tr>
-              <table className="mobile w-screen text-[2.6vw] leading-[11.5px] mmd:text-[2vw]">
+              <table className="mobile w-screen text-[2.6dvw] leading-[11.5px] mmd:text-[2dvw]">
                 <tr>
                   <td width={"45%"}>Consumption power</td>
                   <td>3250 VA</td>
@@ -65,7 +65,7 @@ export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
               </table>
             </tr>
             <tr>
-              <table className="mobile w-screen text-[2.6vw] leading-[11.5px] mmd:text-[2vw]">
+              <table className="mobile w-screen text-[2.6dvw] leading-[11.5px] mmd:text-[2dvw]">
                 <tr>
                   <td width={"45%"}>Dimension (W × D × H mm)</td>
                   <td>390 × 495 × 1,230</td>

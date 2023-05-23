@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import logoSvg from "../../../public/img/therfect_logo.svg";
-import therfectRobot from "../../../public/img/entire_robot.svg";
+import therfectRobot from "../../../public/img/first_mobile_robot.png";
 import ball from "../../../public/img/ball.svg";
 
 export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
@@ -62,8 +62,14 @@ export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
       </div>
 
-      <div className="relative bottom-[4dvw] mx-auto h-[145dvh] w-[100dvw] msm:bottom-[1dvw] mmd:bottom-[-3dvw] mmd:h-[160dvh]">
-        <Image src={therfectRobot} priority fill alt="therfect_robot" />
+      <div className="relative bottom-[7dvh] mx-auto h-[60dvh] w-[100dvw] msm:bottom-[-4dvh] msm:h-[70dvh] mmd:bottom-[-6dvw]">
+        <Image
+          src={therfectRobot}
+          priority
+          className="object-contain"
+          fill
+          alt="therfect_robot"
+        />
       </div>
     </section>
   );

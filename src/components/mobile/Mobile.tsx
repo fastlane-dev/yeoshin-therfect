@@ -54,9 +54,7 @@ const Mobile = () => {
       className="mySwiper"
       speed={800}
       height={innerHeight}
-      onSlideChange={(swiper) => {
-        console.log("swiper.activeIndex", swiper.activeIndex);
-
+      onSlideChangeTransitionEnd={(swiper) => {
         switch (swiper.activeIndex) {
           case 0:
             changeBodyBackground("#f68e0f");

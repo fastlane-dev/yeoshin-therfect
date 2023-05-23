@@ -4,6 +4,10 @@ import ntts from "../../../public/img/ntts.svg";
 import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
 
+const Square = () => (
+  <div className="h-[11dvw] w-[11dvw] bg-main-orange msm:h-[9dvw] msm:w-[9dvw] mmd:h-[7dvw] mmd:w-[7dvw]"></div>
+);
+
 export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
     <section
@@ -28,7 +32,7 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpThird"}>
-          <p className="mshs:leading-[24px] relative font-pretendard text-[13px] font-[400] leading-[30px] text-[#696969]">
+          <p className="relative font-pretendard text-[13px] font-[400] leading-[30px] text-[#696969] mshs:leading-[24px]">
             {
               "Non-pole Therma Transmission Structures 자사에서 직접 개발한 독특한 열전달 구조로, 효과적으로 고주파 에너지를 표피와 진피에 전달합니다."
             }
@@ -37,31 +41,31 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       </div>
       <div className="flex  flex-col gap-[34px]">
         <div className="flex justify-between">
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
+          <Square />
+          <Square />
+          <Square />
+          <Square />
         </div>
         <div className="flex justify-between">
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
+          <Square />
+          <Square />
+          <Square />
+          <Square />
         </div>
       </div>
 
       <div className="flex flex-col  gap-[34px]">
         <div className="flex justify-between">
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
+          <Square />
+          <Square />
+          <Square />
+          <Square />
         </div>
         <div className="flex justify-between">
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-main-orange mmd:h-[9dvw] mmd:w-[9dvw]"></div>
+          <Square />
+          <Square />
+          <Square />
+          <Square />
         </div>
       </div>
     </section>

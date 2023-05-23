@@ -1,6 +1,10 @@
 import React from "react";
 import { InviewComponent } from "../common/InviewComponent";
 
+export const Square = () => (
+  <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] msm:h-[9dvw] msm:w-[9dvw] mmd:h-[7dvw] mmd:w-[7dvw]"></div>
+);
+
 export const SeventhMobileSlide = ({
   innerHeight,
 }: {
@@ -27,7 +31,7 @@ export const SeventhMobileSlide = ({
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpThird"}>
-          <p className="mshs:leading-[24px] relative font-pretendard text-[13px] leading-[30px] text-[#696969]">
+          <p className="relative font-pretendard text-[13px] leading-[30px] text-[#696969] mshs:leading-[24px]">
             {
               "부드럽고 강력한 4MHz 고주파를 롱펄스 패턴으로 조사하여 통증은 줄이고, 즉각적으로 피부 온도를 측정하여 화상의 위험을 줄였습니다."
             }
@@ -36,31 +40,31 @@ export const SeventhMobileSlide = ({
       </div>
       <div className="flex  flex-col gap-[34px]">
         <div className="flex justify-between">
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
+          <Square />
+          <Square />
+          <Square />
+          <Square />
         </div>
         <div className="flex justify-between">
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
+          <Square />
+          <Square />
+          <Square />
+          <Square />
         </div>
       </div>
 
       <div className="flex flex-col  gap-[34px]">
         <div className="flex justify-between">
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
+          <Square />
+          <Square />
+          <Square />
+          <Square />
         </div>
         <div className="flex justify-between">
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
-          <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] mmd:h-[9dvw] mmd:w-[9dvw]"></div>
+          <Square />
+          <Square />
+          <Square />
+          <Square />
         </div>
       </div>
     </section>

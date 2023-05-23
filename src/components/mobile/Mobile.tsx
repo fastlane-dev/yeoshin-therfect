@@ -13,8 +13,12 @@ import { SixthMobileSlide } from "./SixthMobileSlide";
 import { SeventhMobileSlide } from "./SeventhMobileSlide";
 import { EighthMobileSlide } from "./EighthMobileSlide";
 import { NinethMobileSlide } from "./NinethMobileSlide";
+import { changeBodyBackground } from "../common/changeBodyBackground";
 
 const Mobile = () => {
+  useEffect(() => {
+    changeBodyBackground("#f68e0f");
+  }, []);
   const [innerHeight, setInnerHeight] = useState(0);
   const [scrollSectionHeight, setScrollSectionHeight] = useState(0);
 
@@ -33,42 +37,8 @@ const Mobile = () => {
     } else if (viewWidth > 900) {
       setScrollSectionHeight(1800);
     }
-    window.addEventListener("resize", () => {
-      const viewHeight = window.innerHeight;
-      if (viewHeight <= 500) {
-        setScrollSectionHeight(800);
-      } else if (viewHeight > 500 && viewHeight <= 600) {
-        setScrollSectionHeight(1000);
-      } else if (viewHeight > 600 && viewHeight <= 700) {
-        setScrollSectionHeight(1200);
-      } else if (viewHeight > 700 && viewHeight <= 800) {
-        setScrollSectionHeight(1400);
-      } else if (viewHeight > 800 && viewHeight <= 900) {
-        setScrollSectionHeight(1600);
-      } else if (viewHeight > 900) {
-        setScrollSectionHeight(1800);
-      }
-    });
+  }, []);
 
-    return () => {
-      window.removeEventListener("resize", () => {
-        const viewHeight = window.innerHeight;
-        if (viewHeight <= 500) {
-          setScrollSectionHeight(800);
-        } else if (viewHeight > 500 && viewHeight <= 600) {
-          setScrollSectionHeight(1000);
-        } else if (viewHeight > 600 && viewHeight <= 700) {
-          setScrollSectionHeight(1200);
-        } else if (viewHeight > 700 && viewHeight <= 800) {
-          setScrollSectionHeight(1400);
-        } else if (viewHeight > 800 && viewHeight <= 900) {
-          setScrollSectionHeight(1600);
-        } else if (viewHeight > 900) {
-          setScrollSectionHeight(1800);
-        }
-      });
-    };
-  }, [window.innerWidth]);
   useEffect(() => {
     setInnerHeight(window.innerHeight);
   }, []);
@@ -84,6 +54,33 @@ const Mobile = () => {
       className="mySwiper"
       speed={800}
       height={innerHeight}
+      onSlideChange={(swiper) => {
+        console.log("swiper.activeIndex", swiper.activeIndex);
+
+        switch (swiper.activeIndex) {
+          case 0:
+            changeBodyBackground("#f68e0f");
+            break;
+          case 1:
+          case 7:
+            changeBodyBackground("white");
+            break;
+          case 2:
+          case 6:
+            changeBodyBackground("#F9F9F9");
+            break;
+          case 3:
+            changeBodyBackground("#ecddd7");
+            break;
+          case 4:
+          case 5:
+            changeBodyBackground("black");
+            break;
+
+          default:
+            break;
+        }
+      }}
     >
       <SwiperSlide>
         <FirstMobileSlide innerHeight={innerHeight} />

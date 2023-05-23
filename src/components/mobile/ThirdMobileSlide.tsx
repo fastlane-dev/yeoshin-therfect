@@ -9,11 +9,11 @@ import bigNozzle from "../../../public/img/big_nozzle.png";
 export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
     <section
-      className="relative w-screen overflow-hidden bg-[#F9F9F9]"
+      className="relative w-screen bg-[#F9F9F9]"
       style={{ height: innerHeight }}
     >
       <div className="">
-        <div className="mt-[9.8dvh] self-start pl-[30px]">
+        <div className="self-start pl-[30px] pt-[9.8dvh]">
           <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
             <p className="font-sans text-[20px] font-[400] leading-[23px]">
               Cartridge
@@ -65,7 +65,7 @@ export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </InviewComponent>
         </div>
         <InviewComponent animationClassName="animate-smoothUpThird">
-          <div className="absolute bottom-[-24dvh] right-[-148px]  h-screen w-[550px] mshs:bottom-[-29dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[750px] mmhd:w-[850px]">
+          <div className="absolute bottom-[-24dvh] right-[-14px] h-screen w-[400px] mshs:bottom-[-30dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[450px] mmhd:w-[500px]">
             <Image
               style={{ objectFit: "contain" }}
               src={bigNozzle}

@@ -62,7 +62,7 @@ export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
       </div>
 
-      <div className="relative bottom-[4dvw] mx-auto h-[105dvh] w-[100dvw] msm:bottom-[5dvw] msm:h-[145dvh] mmd:bottom-[-3dvw] mmd:h-[160dvh]">
+      <div className="relative bottom-[4dvw] mx-auto h-[145dvh] w-[100dvw] msm:bottom-[1dvw] mmd:bottom-[-3dvw] mmd:h-[160dvh]">
         <Image src={therfectRobot} priority fill alt="therfect_robot" />
       </div>
     </section>

@@ -68,7 +68,7 @@ export const FirstWebSlide = () => {
         <div className=" z-[20]">
           <Image src={logoSvg} height={33} width={160} alt="therfect_logo" />
         </div>
-        <div className="flex items-center gap-[10px]">
+        <div className="flex items-center gap-[10px] font-faktumTest font-[400]">
           <span className="text-[20px] tracking-[0.02em]">KR</span>
           <span className="text-[20px] opacity-40">|</span>
           <span className="text-[20px] tracking-[0.02em] opacity-40">EN</span>

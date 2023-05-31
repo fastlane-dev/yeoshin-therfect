@@ -46,6 +46,8 @@ const Mobile = () => {
             changeBodyBackground("white");
             break;
           case 2:
+            changeBodyBackground("#F9F9F9");
+            break;
           case 6:
             changeBodyBackground("#F9F9F9");
             break;
@@ -76,7 +78,7 @@ const Mobile = () => {
           scrollbar={true}
           mousewheel={true}
           modules={[FreeMode, Scrollbar]}
-          height={innerHeight + 100}
+          height={innerHeight}
         >
           <SwiperSlide className="flex-center">
             <ThirdMobileSlide innerHeight={innerHeight} />

@@ -15,9 +15,9 @@ export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       className="relative w-screen overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]"
       style={{ height: innerHeight }}
     >
-      <div className="mt-[80px] pl-[30px]">
-        <div className="text-[30px] font-[400]">Specifications</div>
-        <div className="my-[60px]">
+      <div className="mt-[12dvh] pl-[30px]">
+        <div className="text-[20px] font-[400]">Specifications</div>
+        <div className="my-[9dvh]">
           <Image
             priority
             width={122}
@@ -35,12 +35,12 @@ export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
       ) : (
         <div className="flex items-start gap-[6dvw] px-[30px]">
-          <table className="mobile w-screen table-fixed text-[2.6dvw] leading-[11.5px] mmd:text-[2dvw]">
+          <table className="mobile w-screen table-fixed text-[2.6dvw] leading-[11.5px] msm:text-[2dvw] mmd:text-[1.8dvw]">
             <tbody>
               <tr>
                 <td width={"30%"}>Type</td>
                 <td>
-                  <div className="mb-[22px]">
+                  <div className="mb-[8px]">
                     Thermal tips - Mono-polar Radiofrequency
                   </div>
                   <div>Fractional tips - Bi-polar Radiofrequency</div>
@@ -61,12 +61,12 @@ export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
               <tr>
                 <td>Type of tip</td>
                 <td>
-                  <div className="mb-[22px]">3 Thermal tips</div>
+                  <div className="mb-[8px]">3 Thermal tips</div>
                   <div>2 Fractional tips</div>
                 </td>
               </tr>
               <tr>
-                <table className="mobile w-screen text-[2.6dvw] leading-[11.5px] mmd:text-[2dvw]">
+                <table className="mobile w-screen text-[2.6dvw] leading-[11.5px] msm:text-[2dvw] mmd:text-[1.8dvw]">
                   <tr>
                     <td width={"45%"}>Consumption power</td>
                     <td>3250 VA</td>
@@ -74,7 +74,7 @@ export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
                 </table>
               </tr>
               <tr>
-                <table className="mobile w-screen text-[2.6dvw] leading-[11.5px] mmd:text-[2dvw]">
+                <table className="mobile w-screen text-[2.6dvw] leading-[11.5px] msm:text-[2dvw] mmd:text-[1.8dvw] ">
                   <tr>
                     <td width={"45%"}>Dimension (W × D × H mm)</td>
                     <td>390 × 495 × 1,230</td>

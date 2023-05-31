@@ -20,24 +20,6 @@ const Mobile = () => {
     changeBodyBackground("#f68e0f");
   }, []);
   const [innerHeight, setInnerHeight] = useState(0);
-  const [scrollSectionHeight, setScrollSectionHeight] = useState(0);
-
-  useEffect(() => {
-    const viewWidth = window.innerHeight;
-    if (viewWidth <= 500) {
-      setScrollSectionHeight(800);
-    } else if (viewWidth > 500 && viewWidth <= 600) {
-      setScrollSectionHeight(1000);
-    } else if (viewWidth > 600 && viewWidth <= 700) {
-      setScrollSectionHeight(1200);
-    } else if (viewWidth > 700 && viewWidth <= 800) {
-      setScrollSectionHeight(1400);
-    } else if (viewWidth > 800 && viewWidth <= 900) {
-      setScrollSectionHeight(1600);
-    } else if (viewWidth > 900) {
-      setScrollSectionHeight(1800);
-    }
-  }, []);
 
   useEffect(() => {
     setInnerHeight(window.innerHeight);

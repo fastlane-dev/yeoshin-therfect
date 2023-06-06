@@ -1,6 +1,6 @@
 import React from "react";
 
-import ntts from "../../../public/img/ntts.svg";
+import ntts from "../../../public/img/ntts_new.svg";
 import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
 
@@ -17,12 +17,12 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         height: innerHeight,
       }}
     >
-      <div className="absolute  left-[50%] top-[50%] h-[5.3dvh] w-[79dvw] -translate-x-[49%] -translate-y-[350%]">
+      <div className="absolute  left-[50%] top-[50%] h-[5.3dvh] w-[79dvw] -translate-x-[49%] -translate-y-[328%]">
         <InviewComponent
           threshold={0}
           animationClassName={"animate-smoothUpFirst"}
         >
-          <div className="flex-center mb-[32px]">
+          <div className="flex-center mb-[1px]">
             <Image width={157} height={40} src={ntts} alt="ntts" priority />
           </div>
         </InviewComponent>
@@ -32,7 +32,7 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpThird"}>
-          <p className="relative font-pretendard text-[13px] font-[400] leading-[30px] text-[#696969] mshs:leading-[24px]">
+          <p className="relative text-center font-pretendard text-[13px] font-[400] leading-[30px] text-[#696969] mshs:leading-[24px]">
             {
               "Non-pole Therma Transmission Structures 자사에서 직접 개발한 독특한 열전달 구조로, 효과적으로 고주파 에너지를 표피와 진피에 전달합니다."
             }

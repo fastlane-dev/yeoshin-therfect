@@ -11,7 +11,7 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       className="relative w-screen overflow-hidden bg-white"
       style={{ height: innerHeight }}
     >
-      <div className="relative z-[30] mt-[9.8dvh] self-start pl-[30px]">
+      <div className="relative z-[30] mt-[5dvh] self-start pl-[30px]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Product
@@ -42,7 +42,9 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
         <InviewComponent animationClassName="animate-smoothUpFirst">
           <div>
-            <p className="mb-[0.1dvh] font-sans text-[30px] font-[400]">4MHz</p>
+            <p className="mb-[0.1dvh] font-sans text-[30px] font-[400] leading-[33px]">
+              4MHz
+            </p>
             <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[500]">
               고성능 고주파
             </p>
